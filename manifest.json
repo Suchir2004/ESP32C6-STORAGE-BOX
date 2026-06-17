@@ -1,0 +1,28 @@
+{
+  "name": "ESP32 C6 Storage Box",
+  "version": "1.0.0",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-C6",
+      "parts": [
+        {
+          "path": "firmware/main.ino.bootloader.bin",
+          "offset": "0x0000"
+        },
+        {
+          "path": "firmware/main.ino.partitions.bin",
+          "offset": "0x8000"
+        },
+        {
+          "path": "firmware/boot_app0.bin",
+          "offset": "0xe000"
+        },
+        {
+          "path": "firmware/main.ino.bin",
+          "offset": "0x10000"
+        }
+      ]
+    }
+  ]
+}

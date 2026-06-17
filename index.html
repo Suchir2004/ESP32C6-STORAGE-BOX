@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ESP32 C6 Storage Box</title>
+
+<script type="module"
+src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module">
+</script>
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background:#111827;
+    color:white;
+    font-family:Segoe UI,Arial,sans-serif;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:700px;
+    background:#1f2937;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+h1{
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#9ca3af;
+    margin-bottom:30px;
+}
+
+.card{
+    background:#111827;
+    padding:20px;
+    border-radius:16px;
+    margin-bottom:20px;
+}
+
+.card h2{
+    margin-bottom:15px;
+}
+
+ul{
+    padding-left:20px;
+    line-height:1.8;
+}
+
+.footer{
+    margin-top:30px;
+    color:#9ca3af;
+    text-align:center;
+}
+
+esp-web-install-button{
+    --esp-tools-button-color:#ffffff;
+    --esp-tools-button-background:linear-gradient(135deg,#2563eb,#1d4ed8);
+    --esp-tools-button-border-radius:14px;
+    --esp-tools-button-font-size:16px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>ESP32 C6 Storage Box</h1>
+
+<p class="subtitle">
+By SUCHIR KAUSHIK
+</p>
+
+<div class="card">
+<h2>Supported Board</h2>
+
+<p>
+ESP32-C6 Waveshare
+</p>
+</div>
+
+<div class="card">
+<h2>Flash Firmware</h2>
+
+<esp-web-install-button
+manifest="manifest.json">
+</esp-web-install-button>
+
+</div>
+
+<div class="card">
+<h2>Installation Steps</h2>
+
+<ul>
+<li>Connect ESP32-C6 via USB.</li>
+<li>Use Chrome or Microsoft Edge.</li>
+<li>Click Install.</li>
+<li>Select the serial port.</li>
+<li>Wait for flashing to finish.</li>
+<li>Enjoy your device.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Troubleshooting</h2>
+
+<ul>
+<li>Use a data USB cable.</li>
+<li>Install USB drivers if required.</li>
+<li>Hold BOOT button if connection fails.</li>
+<li>Try another USB port.</li>
+<li>Close Serial Monitor before flashing.</li>
+</ul>
+</div>
+
+<div class="footer">
+ESP32 C6 Storage Box • SUCHIR KAUSHIK
+</div>
+
+</div>
+
+</body>
+</html>
